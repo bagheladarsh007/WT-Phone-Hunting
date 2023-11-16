@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  .navbar {
+    padding: 2.5rem 5rem;
+    background-color: #0d6efd0d;
+    display: flex;
+    justify-content: space-between;
+  }
+  .brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .signup {
+    background-color: rgb(87, 13, 248);
+    color: white;
+    padding: 0.825rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 14px;
+    border: none;
+    text-transform: uppercase;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .title {
+    font-weight: 800;
+    font-size: 3.5rem;
+  }
+  .description {
+    text-align: center;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+  }
+  .buynow {
+    background-color: rgb(87, 13, 248);
+    color: white;
+    padding: 0.825rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 14px;
+    border: none;
+    text-transform: uppercase;
+  }
+  header img {
+    min-width: 400px;
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .maintitle {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .searchdiv {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .searchdiv input {
+    width: 25rem;
+    padding: 0.825rem;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+  }
+  .searchdiv button {
+    padding: 0.85rem 1.5rem;
+    background-color: rgb(87, 13, 248);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+  }
+  .phone-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    padding: 0 2rem;
+  }
+  .card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
+  .card img {
+    width: 40%;
+  }
+  .card button {
+    background-color: rgb(87, 13, 248);
+    color: white;
+    padding: 0.825rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 14px;
+    border: none;
+    text-transform: uppercase;
+  }
+  .hidden {
+    display: none !important;
+  }
+  .showall {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  .showall button {
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(87, 13, 248);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+  }
+  #details {
+    position: relative;
+    display: none;
+  }
+  
+  #my_modal {
+    top: 10%;
+    left: 30%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+  }
+  #my_modal button {
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+  }
+  #my_modal img {
+    margin: 1rem 0;
+  }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Store</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2 class="brand">Phone Store</h2>
+      <button class="signup">Sign Up</button>
+    </nav>
+    <header class="header">
+      <h1 class="title">Apple Iphone 13 Pro Max</h1>
+      <span class="description"
+        >There are many variations of passages of Lorem Ipsum available, but the
+        majority <br />
+        have suffered alteration in some form, by injected humou.
+      </span>
+      <button class="buynow">Buy Now</button>
+      <img
+        src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-finish-unselect-gallery-1-202207_GEO_EMEA?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1654894184583"
+      />
+    </header>
+    <main>
+      <div>
+        <h2 class="maintitle">Search Your Phone</h2>
+        <div class="searchdiv">
+          <input
+            type="text"
+            id="searchField"
+            placeholder="oppo, samsung, iphone"
+          />
+          <button class="search" id="searchbtn" onclick="searchHandler()">
+            Search
+          </button>
+        </div>
+      </div>
+      <div class="phone-container" id="phone-container"></div>
+      <div class="showall" id="showALLBtn">
+        <button onclick="showBtn()" class="showallbtn">Show All</button>
+      </div>
+      <section id="details">
+        <dialog id="my_modal" class="modal modal-bottom sm:modal-middle">
+          <form method="dialog" class="modal-box text-center">
+            <div id="imgContainer" class="flex justify-center"></div>
+            <h3 id="detailsPhoneName" class="font-bold text-lg mt-3"></h3>
+            <h3 id="detailsBrand" class="py-4"></h3>
+            <p id="detailsSpec"></p>
+            <p id="releaseDate" class="my-2"></p>
+
+            <div class="modal-action flex justify-center">
+              <!-- if there is a button in form, it will close the modal -->
+              <button
+                onclick="closeCard()"
+                class="btn bg-red-600 text-white"
+                id="closebtn"
+              >
+                Close
+              </button>
+            </div>
+          </form>
+        </dialog>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
